@@ -1,0 +1,37 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.square-btn {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.square {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.square > .square-btn {
+  min-width: 4rem;
+  min-height: 4rem;
+  border: transparent;
+}
+button {
+  border-left: 1px solid blue !important;
+  border-bottom: 1px solid blue !important;
+}
+
+.first-row > button {
+  border-top: 1px solid blue !important;
+}
+
+.square > button:nth-child(3) {
+  border-right: 1px solid blue !important;
+}
